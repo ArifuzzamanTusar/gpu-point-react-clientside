@@ -1,13 +1,18 @@
 import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import Customlink from '../../Utilities/Customlink';
 
 import './Header.css'
 
 const Header = () => {
+
+    const handleSignOut = () => {
+        console.log("logout");
+    }
+
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" className='bg-teal'  sticky="top">
+            <Navbar collapseOnSelect expand="lg" className='bg-teal' sticky="top">
                 <Container className=''>
                     <Navbar.Brand >
                         <Customlink to={'/'}> <img width={150} src='https://res.cloudinary.com/tusar/image/upload/v1650267511/travel/touraholic_y37ysx.png' alt="" /> </Customlink>
@@ -21,7 +26,13 @@ const Header = () => {
 
                         </Nav>
                         <Nav>
+                            <NavDropdown  title={"Welcome!"} id="collasible-nav-dropdown">
 
+                                <NavDropdown.Item > <Customlink to={'/manage-inventories'}>Manage Inventories</Customlink> </NavDropdown.Item>
+                                <NavDropdown.Divider />
+
+                                <div onClick={() => handleSignOut()} className="dropdown-item">Log Out</div>
+                            </NavDropdown>
 
                         </Nav>
                     </Navbar.Collapse>

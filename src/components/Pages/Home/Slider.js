@@ -15,8 +15,8 @@ const Slider = () => {
                 />
                 <Carousel.Caption className='caption_container'>
                     <div className="carousel_inner container">
-                        <h2 className='slider_title'>Welcome to Touraholic</h2>
-                        <h4 className='slider_subtitle'> Your Trusted Travel Partner</h4>
+                        <h2 className='slider_title'>ASUS ROG Strix </h2>
+                        <h4 className='slider_subtitle'> GeForce RTX 3080</h4>
                         <p className='col-md-6'><strong>Touraholic</strong> is a trusted and reliable tour and travel agency among all the leading and updated tour-operating services in Bangladesh. We are here to bring the luxury to your traveling. Safe traveling, your security, and your enjoyment are our focus during your travels.</p>
 
                         <Link className='btn btn-outline-light' to={'/tour-packages'}>Explore Tours</Link>

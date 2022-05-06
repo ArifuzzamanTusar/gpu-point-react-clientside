@@ -10,6 +10,9 @@
 body{
   font-family: 'Poppins', sans-serif;
 }
+.spinner-full{
+  height: 90vh;
+}
 
 .page-body{
   min-height: 90vh;

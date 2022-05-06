@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Footer from './components/Global/Footer/Footer';
@@ -11,6 +12,9 @@ import Inventory from './components/Pages/Inventory/Inventory';
 import Myproducts from './components/Pages/Inventories/Myproducts';
 import Addproduct from './components/Pages/Inventories/Addproduct';
 import Blog from './components/Pages/Blog/Blog';
+import Register from './components/Pages/Auth/Register';
+import Login from './components/Pages/Auth/Login';
+import ForgotPassword from './components/Pages/Auth/ForgotPassword';
 
 function App() {
 
@@ -26,6 +30,11 @@ function App() {
           <Route path='/blog' element={<Blog></Blog>} ></Route>
 
 
+          {/* Logins  */}
+          <Route path='/login' element={<Login></Login>}  ></Route>
+          <Route path='/register' element={<Register></Register>} ></Route>
+          <Route path='/reset-password'element={<ForgotPassword></ForgotPassword>} ></Route>
+
           {/* private routes  */}
          
 
@@ -33,6 +42,7 @@ function App() {
           <Route path='/manage-inventories' element={<ManageInventories></ManageInventories>} ></Route>
           <Route path='/my-products' element={<Myproducts></Myproducts>} ></Route>
           <Route path='/add-products' element={<Addproduct></Addproduct>} ></Route>
+
 
         </Routes>
       </div>

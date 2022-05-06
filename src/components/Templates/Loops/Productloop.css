@@ -1,0 +1,54 @@
+.product_loop {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.9px);
+  -webkit-backdrop-filter: blur(5.9px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  overflow: hidden;
+}
+.product_loop .product_image {
+  margin: 5px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+.product_loop h3{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.product_image img {
+  transition: 0.5s;
+  border-radius: 8px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+
+.product_image img:hover {
+  transform: scale(1.2);
+}
+
+.product_loop .country {
+  right: 20px;
+}
+.product_loop .rating {
+  left: 20px;
+}
+
+.product_loop .options{
+    padding: 10px;
+    border: 1px solid #00000034;
+    border-radius: 6px;
+}
+
+
+.book_now {
+    background: var(--teal);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}

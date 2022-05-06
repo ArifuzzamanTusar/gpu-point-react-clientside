@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import Customlink from '../../../Hooks/Customlink';
+import Customlink from '../../Utilities/Customlink';
+
 import './Header.css'
 
 const Header = () => {
@@ -15,7 +16,7 @@ const Header = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
                             <Customlink to={'/'}>Home</Customlink>
-                            <Customlink to={'/add-product'}>Add Products</Customlink>
+                            <Customlink to={'/about'}>About</Customlink>
 
 
                         </Nav>

@@ -1,0 +1,18 @@
+.pagetitle {
+  background-image: url("https://res.cloudinary.com/tusar/image/upload/v1650198605/travel/nilgiri_-_Copy_vwhsib.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagetitle .title {
+  font-family: "Rubik Wet Paint", cursive;
+  font-size: 48px;
+  color: #ffffff;
+}
+.pagetitle .sub-title {
+  color: #ffffff;
+}

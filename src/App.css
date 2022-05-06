@@ -6,8 +6,13 @@
   --teal: #045c5c;
 }
 
+
 body{
   font-family: 'Poppins', sans-serif;
+}
+
+.page-body{
+  min-height: 90vh;
 }
 
 .bg-teal{

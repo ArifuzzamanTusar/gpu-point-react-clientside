@@ -1,0 +1,26 @@
+.slider-image {
+    height: 90vh;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .caption_container {
+    bottom: inherit;
+    top: 20vh;
+    color: #fff;
+    text-align: left;
+  }
+  
+  .carousel_inner .slider_title {
+    font-family: 'Rubik Wet Paint', cursive;
+    font-size: 82px;
+  }
+  
+  /* Phones to tablets 767px and below */
+  @media screen and (max-width: 767px) {
+    /* write code here */
+  
+    .carousel_inner .slider_title {
+      font-size: 42px;
+    }
+  }

@@ -1,0 +1,18 @@
+.divider{
+    margin: 20px 0px;
+    height: 2px;
+    width: 100px;
+    background: white;
+    border-radius: 50px;
+
+}
+
+
+.lists ul li{
+    list-style: none;
+    margin: 10px 0px;
+
+}
+.lists ul{
+    padding-left: 0px;
+}

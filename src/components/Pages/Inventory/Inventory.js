@@ -44,7 +44,7 @@ const Inventory = () => {
                         </div>
 
 
-                        <Button onClick={() => handleDeliver(product_id)} className='book_now col-12 my-3'>Deliver  </Button>
+                        <Button onClick={() => handleDeliver(product_id)} className="book_now col-12 my-3">Deliver  </Button>
                     </div>
 
                         </div>

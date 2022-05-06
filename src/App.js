@@ -1,18 +1,18 @@
 // import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
 import Footer from './components/Global/Footer/Footer';
 import Header from './components/Global/Header/Header';
 import About from './components/Pages/About/About';
 import Home from './components/Pages/Home/Home';
 import ManageInventories from './components/Pages/Inventories/ManageInventories';
 import Inventory from './components/Pages/Inventory/Inventory';
+import Myproducts from './components/Pages/Inventories/Myproducts';
+import Addproduct from './components/Pages/Inventories/Addproduct';
+import Blog from './components/Pages/Blog/Blog';
 
 function App() {
-
-
-
 
 
   return (
@@ -23,6 +23,7 @@ function App() {
           <Route path='/' element={<Home></Home>} ></Route>
           <Route path='/home' element={<Home></Home>} ></Route>
           <Route path='/about' element={<About></About>} ></Route>
+          <Route path='/blog' element={<Blog></Blog>} ></Route>
 
 
           {/* private routes  */}
@@ -30,6 +31,8 @@ function App() {
 
           <Route path='/inventory/:product_id' element={<Inventory></Inventory>} ></Route>
           <Route path='/manage-inventories' element={<ManageInventories></ManageInventories>} ></Route>
+          <Route path='/my-products' element={<Myproducts></Myproducts>} ></Route>
+          <Route path='/add-products' element={<Addproduct></Addproduct>} ></Route>
 
         </Routes>
       </div>

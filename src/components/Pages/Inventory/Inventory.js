@@ -1,11 +1,11 @@
 import React from 'react';
-import { Button, Col, Container, Row } from 'react-bootstrap';
+import { Button, Col, Container, Form, FormControl, InputGroup, Row } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 
 const Inventory = () => {
-    const {product_id} = useParams();
+    const { product_id } = useParams();
 
-    const handleDeliver = (id) =>{
+    const handleDeliver = (id) => {
         console.log(id);
     }
     return (
@@ -18,7 +18,7 @@ const Inventory = () => {
                         </div>
                     </Col>
                     <Col md={6}>
-                        <div className="product-dics">
+                        <div className="product-dics p-4 shadow-lg rounded">
                             <div className="product_name">
                                 <h2 className="h4"> ASUS ROG Strix GeForce RTX 3080 Ti OC Edition 12GB GDDR6X Gaming Graphics Card</h2>
                             </div>
@@ -30,26 +30,42 @@ const Inventory = () => {
                             </div>
 
                             <div className="options">
-                        <div className="stock-price  d-flex justify-content-between align-items-center">
-                            <div className="stock">
-                            <span className='h4'> sdad</span>
-                                <small>Pcs</small>
-                               
-                            </div>
-                            <div className="price">
-                                <span className='h4'>asdas</span>
-                                <small>TK</small>
-                            </div>
+                                <div className="stock-price  d-flex justify-content-between align-items-center">
+                                    <div className="stock">
+                                        <span className='h4'> sdad</span>
+                                        <small>Pcs</small>
 
+                                    </div>
+                                    <div className="price">
+                                        <span className='h4'>asdas</span>
+                                        <small>TK</small>
+                                    </div>
+
+                                </div>
+
+
+                                <Button onClick={() => handleDeliver(product_id)} className="book_now col-12 my-3">Deliver  </Button>
+                            </div>
+                            {/* ----------------------------------- */}
+                            <div className="re-stock mt-5 p-4     rounded shadow-sm">
+                                <div className="h3">Restock this Item</div>
+                                <Form>
+                                    <InputGroup className="mb-3">
+                                        <FormControl type="number" placeholder="Stock Amount"
+                                        />
+                                        <Button variant="outline-secondary" id="button-addon2" type='submit'>
+                                            Update to Stock
+                                        </Button>
+                                    </InputGroup>
+                                </Form>
+
+                            </div>
                         </div>
 
 
-                        <Button onClick={() => handleDeliver(product_id)} className="book_now col-12 my-3">Deliver  </Button>
-                    </div>
-
-                        </div>
                     </Col>
                 </Row>
+
             </Container>
         </div>
     );

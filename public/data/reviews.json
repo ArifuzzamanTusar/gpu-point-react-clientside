@@ -1,0 +1,77 @@
+[
+    {
+        "id": 1,
+        "rating": 5,
+        "name": "Bobby Alvarez",
+        "designation": "CEO, Amazon",
+        "image": "https://randomuser.me/api/portraits/men/17.jpg",
+        "review": "Playstation VR is the best invention for people who loves video games. It's a completely new world you are going to be able to explore in your living room. I was blown away by how real it looked and how much details were put into it."
+    },
+    {
+        "id": 2,
+        "rating": 4.9,
+        "name": "Byron Wade",
+        "designation": "Manager, Alexa inc",
+        "image": "https://randomuser.me/api/portraits/men/82.jpg",
+        "review": "Playstation VR has changed my life for the better. I'd always been into video games, but now it's like everything has come to life right in front of me. Playstation VR is a game-changer and it may be the best investment I ever made."
+    },
+    {
+        "id": 3,
+        "rating": 5,
+        "name": "Bob Day",
+        "designation": "CTO, Mailchimp",
+        "image": "https://randomuser.me/api/portraits/men/81.jpg",
+        "review": "Playstation VR is a game changer. The quality of the games I've played so far are amazing and the experience is worth every penny. My friends who have tried VR always rave about it and I can't wait to take my PSVR to my next party."
+    },
+    {
+        "id": 4,
+        "rating": 4.2,
+        "name": "Hunter Castro",
+        "designation": "CEO, Hubspot",
+        "image": "https://randomuser.me/api/portraits/men/71.jpg",
+        "review": "I'm not sure what the other reviews are talking about because I have no lag and the tracking is working just fine. I was a little skeptical at first but this VR headset is amazing! I can't believe how immersive it feels and the fact that it's compatible with my PS4 made my day. It also comes with some pretty neat games so you're not just limited"
+    },
+    {
+        "id": 5,
+        "rating": 5,
+        "name": "Dylan Kelly",
+        "designation": "CEO, Amazon",
+        "image": "https://randomuser.me/api/portraits/men/88.jpg",
+        "review": "I'm not usually one for partying, but my husband convinced me to try out Playstation VR at a friend's house. I was really reluctant because I don't like how heavy the headset is and I heard horror stories about people passing out. But once we started playing, it was amazing! It took me a few minutes to get used to the controller and hand tracking"
+    }, 
+    {
+        "id": 6,
+        "rating": 5,
+        "name": "Norman Beck",
+        "designation": "Marketer, NEO agency",
+        "image": "https://randomuser.me/api/portraits/men/40.jpg",
+        "review": "I've always been a huge Playstation fan. I bought the PSVR headset a few days ago and it has changed my life. I can't stop playing it. It's the best thing since sliced bread, and the graphics are beautiful! I would highly recommend to anyone looking to change their world, try PSVR out!"
+    },
+    {
+        "id": 7,
+        "rating": 4.8,
+        "name": "Bill Robinson",
+        "designation": "CTO, Virtual Life",
+        "image": "https://randomuser.me/api/portraits/men/41.jpg",
+        "review": "Playstation VR is the best virtual reality experience I have ever had. I am absolutely blown away by what this system offers. It's like a dream come true! I can't put it down and always look for new games to try out. It's an absolute must-buy and will never disappoint!"
+    },
+    
+    {
+        "id": 8,
+        "rating": 4.7,
+        "name": "Tim Nelson",
+        "designation": "Researcher, Nasa",
+        "image": "https://randomuser.me/api/portraits/men/67.jpg",
+        "review": "Playstation VR is a game changer. The quality of the games I've played so far are amazing and the experience is worth every penny. My friends who have tried VR always rave about it and I can't wait to take my PSVR to my next party."
+    },
+    {
+        "id": 9,
+        "rating": 5,
+        "name": "Jim Graves",
+        "designation": "CEO, Google",
+        "image": "https://randomuser.me/api/portraits/men/34.jpg",
+        "review": "I never thought I would say this, but I'm addicted to playing VR games...I don't know if it's the adrenaline or the excitement, but I feel like it's a drug of sorts."
+    }
+    
+
+]

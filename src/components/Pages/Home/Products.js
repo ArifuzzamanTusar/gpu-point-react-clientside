@@ -11,7 +11,7 @@ const Products = () => {
             <Container>
                 <Row>
                     {
-                        product.map(getProduct => <Productloops key={getProduct._id} data={getProduct}></Productloops>)
+                        product.slice(0,6).map(getProduct => <Productloops key={getProduct._id} data={getProduct}></Productloops>)
                     }
                 </Row>
             </Container>

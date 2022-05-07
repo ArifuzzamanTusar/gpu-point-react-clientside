@@ -15,7 +15,7 @@ const ManageInventories = () => {
                         <Table  bordered hover responsive>
                             <thead>
                                 <tr>
-                                    <th>ID</th>
+                                    
                                     <th>Thumbs</th>
                                     <th>Name</th>
                                     <th>Supplier</th>
@@ -30,7 +30,6 @@ const ManageInventories = () => {
                                 {
                                     products.map(getProduct =>
                                         <tr key={getProduct._id} >
-                                            <td>{getProduct._id}</td>
                                             <td width={50}> <img className='thumb-image img-fluid'  src={getProduct.image} alt="" />  </td>
                                             <td>{getProduct.name}</td>
                                             <td>{getProduct.supplier}</td>

@@ -44,7 +44,7 @@ function App() {
           {/* private routes  */}
          
 
-          <Route path='/inventory/:product_id' element={ <RequireAuth> <Inventory></Inventory> </RequireAuth>  } ></Route>
+          <Route path='/inventory/:productId' element={ <RequireAuth> <Inventory></Inventory> </RequireAuth>  } ></Route>
           <Route path='/manage-inventories' element={ <RequireAuth> <ManageInventories></ManageInventories> </RequireAuth> } ></Route>
           <Route path='/my-products' element={ <RequireAuth> <Myproducts></Myproducts></RequireAuth> } ></Route>
           <Route path='/add-products' element={ <RequireAuth>  <Addproduct></Addproduct>  </RequireAuth>} ></Route>

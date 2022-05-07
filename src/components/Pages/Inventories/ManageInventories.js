@@ -1,21 +1,70 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Container, Table } from 'react-bootstrap';
-import useProduct from '../../../Hooks/useProduct';
-import { BsTrash  } from "react-icons/bs";
+import { BsTrash } from "react-icons/bs";
 import { FaCog } from "react-icons/fa";
+import swal from 'sweetalert';
+import axios from 'axios';
 
 const ManageInventories = () => {
+    const [products, setProducts] = useState([]);
+    const [pages, setPages] = useState(0);
+    const [page, setPage] = useState(0);
+    const [size, setSize] = useState(5);
 
-    const [products] = useProduct();
+    // fetching data with query
+    useEffect(() => {
+        const getProducts = async () => {
+            const { data } = await axios.get(`http://localhost:5000/products?page=${page}&size=${size}`);
+            setProducts(data)
+        }
+        getProducts();
+    }, [page, size])
+
+    // fetching total product
+    useEffect(() => {
+        const getProductCount = async () => {
+            const { data } = await axios.get('http://localhost:5000/products-count');
+            setPages(Math.ceil(data.count / 5));
+        }
+        getProductCount();
+    }, [])
+
+    // delete single product with sweetaleart
+    const deleteProduct = async (productId) => {
+        swal({
+            title: "Are you sure?",
+            text: "Be careful... Once deleted, you will not be able to recover this imaginary file!",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        })
+            .then((willDelete) => {
+                if (willDelete) {
+                    axios.delete(`http://localhost:5000/product/${productId}`)
+                        .then(response => {
+                            const remaining = products.filter(product => product._id !== productId);
+                            setProducts(remaining);
+                            swal("Product has been deleted!", {
+                                icon: "success",
+                            });
+                        });
+                } else {
+                    swal("Action Cancelled, Chill!");
+                }
+            });
+    }
+
+
     return (
         <div>
             <div className="py-5">
                 <Container>
+
                     <div className="table-area">
-                        <Table  bordered hover responsive>
+                        <Table bordered hover responsive>
                             <thead>
                                 <tr>
-                                    
+
                                     <th>Thumbs</th>
                                     <th>Name</th>
                                     <th>Supplier</th>
@@ -30,15 +79,15 @@ const ManageInventories = () => {
                                 {
                                     products.map(getProduct =>
                                         <tr key={getProduct._id} >
-                                            <td width={50}> <img className='thumb-image img-fluid'  src={getProduct.image} alt="" />  </td>
+                                            <td width={50}> <img className='thumb-image img-fluid' src={getProduct.image} alt="" />  </td>
                                             <td>{getProduct.name}</td>
                                             <td>{getProduct.supplier}</td>
                                             <td>{getProduct.price}</td>
                                             <td>{getProduct.stock}</td>
                                             <td>{getProduct.sold}</td>
                                             <td>
-                                                <Button className='mx-1' variant='primary' > <FaCog/> </Button>
-                                                <Button variant='danger' > <BsTrash/></Button>
+                                                <Button className='mx-1' variant='primary' > <FaCog /> </Button>
+                                                <Button onClick={() => deleteProduct(getProduct._id)} variant='danger' > <BsTrash /></Button>
 
                                             </td>
                                         </tr>
@@ -47,6 +96,27 @@ const ManageInventories = () => {
 
                             </tbody>
                         </Table>
+                        {/* PAGINATION ================== */}
+                        <div className="d-flex justify-content-between align-items-center">
+                            <div className='mb-4 d-flex justify-content-end'>
+                                <span className='me-2'>Per Page</span>
+                                <select defaultValue={5} onChange={e => setSize(e.target.value)}>
+                                    <option value="5">5</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                </select>
+                            </div>
+                            <div className='mt-4 d-flex justify-content-end'>
+                                {
+                                    [...Array(pages).keys()].map(number => <Button
+                                        className={page === number ? 'btn-page-selected btn-page mx-2 ' : 'btn-page mx-2 '}
+                                        onClick={() => setPage(number)}>
+                                        {number + 1}
+                                    </Button>)
+                                }
+                            </div>
+                        </div>
+                        {/* =================================== */}
                     </div>
                 </Container>
             </div>

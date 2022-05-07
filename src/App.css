@@ -26,3 +26,16 @@ body{
 }
 
 
+.btn-page{
+  background: transparent;
+  color: var(--teal);
+}
+.btn-page-selected{
+  background: var(--teal) !important;
+  color: white;
+}
+.swal-text{
+  text-align: center;
+}
+
+

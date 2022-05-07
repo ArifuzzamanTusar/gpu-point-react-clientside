@@ -8,7 +8,7 @@ const Footer = () => {
                 <Row className='py-5'>
                     <Col md={4}>
                         <div className="footer-container py-2">
-                            <h2>  <img width={250} src="https://res.cloudinary.com/tusar/image/upload/v1650267511/travel/touraholic_y37ysx.png" alt="" /></h2>
+                            <h2>  <img width={250} src="https://res.cloudinary.com/tusar/image/upload/v1651940469/gpu-point/gpu-point_zciihy.webp" alt="" /></h2>
                             <p>Touraholic is a trusted and reliable tour and travel agency among all the leading and updated tour-operating services in Bangladesh.</p>
                         </div>
 

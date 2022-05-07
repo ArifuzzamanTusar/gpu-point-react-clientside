@@ -22,7 +22,7 @@ const Header = () => {
             <Navbar collapseOnSelect expand="lg" className='bg-teal' sticky="top">
                 <Container className=''>
                     <Navbar.Brand >
-                        <Customlink to={'/'}> <img width={150} src='https://res.cloudinary.com/tusar/image/upload/v1650267511/travel/touraholic_y37ysx.png' alt="" /> </Customlink>
+                        <Customlink to={'/'}> <img width={150} src='https://res.cloudinary.com/tusar/image/upload/v1651940469/gpu-point/gpu-point_zciihy.webp' alt="" /> </Customlink>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">

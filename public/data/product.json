@@ -1,6 +1,5 @@
 [
     {
-        "_id": "1",
         "slug": "asus-rog-strix-geforce-rtx-3080-ti-oc-edition-12gb-gddr6x-gaming-graphics-card",
         "name": "ASUS ROG Strix GeForce RTX 3080 Ti OC Edition 12GB GDDR6X Gaming Graphics Card",
         "model": "ROG Strix GeForce RTX 3080 Ti OC Edition",
@@ -12,10 +11,10 @@
         "supplier": "dsfsd",
         "short_disc": "Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada.",
         "sku": "sk1223",
+        "email":"text@test.com",
         "image": "https://res.cloudinary.com/tusar/image/upload/v1651828564/gpu-point/gpu-1_kf68ru.jpg"
     },
     {
-        "_id": "2",
         "slug": "asus-rog-strix-geforce-rtx-3080-ti-oc-edition-12gb-gddr6x-gaming-graphics-card",
         "name": "ASUS ROG Strix GeForce RTX 3080 Ti OC Edition 12GB GDDR6X Gaming Graphics Card",
         "model": "ROG Strix GeForce RTX 3080 Ti OC Edition",
@@ -27,10 +26,10 @@
         "supplier": "dsfsd",
         "short_disc": "Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada.",
         "sku": "sk1223",
+        "email":"text@test.com",
         "image": "https://res.cloudinary.com/tusar/image/upload/v1651828564/gpu-point/gpu-1_kf68ru.jpg"
     },
     {
-        "_id": "3",
         "slug": "asus-rog-strix-geforce-rtx-3080-ti-oc-edition-12gb-gddr6x-gaming-graphics-card",
         "name": "ASUS ROG Strix GeForce RTX 3080 Ti OC Edition 12GB GDDR6X Gaming Graphics Card",
         "model": "ROG Strix GeForce RTX 3080 Ti OC Edition",
@@ -42,10 +41,10 @@
         "supplier": "dsfsd",
         "short_disc": "Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada.",
         "sku": "sk1223",
+        "email":"text@test.com",
         "image": "https://res.cloudinary.com/tusar/image/upload/v1651828564/gpu-point/gpu-1_kf68ru.jpg"
     },
     {
-        "_id": "4",
         "slug": "asus-rog-strix-geforce-rtx-3080-ti-oc-edition-12gb-gddr6x-gaming-graphics-card",
         "name": "ASUS ROG Strix GeForce RTX 3080 Ti OC Edition 12GB GDDR6X Gaming Graphics Card",
         "model": "ROG Strix GeForce RTX 3080 Ti OC Edition",
@@ -57,10 +56,10 @@
         "supplier": "dsfsd",
         "short_disc": "Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada.",
         "sku": "sk1223",
+        "email":"text@test.com",
         "image": "https://res.cloudinary.com/tusar/image/upload/v1651828564/gpu-point/gpu-1_kf68ru.jpg"
     },
     {
-        "_id": "5",
         "slug": "asus-rog-strix-geforce-rtx-3080-ti-oc-edition-12gb-gddr6x-gaming-graphics-card",
         "name": "ASUS ROG Strix GeForce RTX 3080 Ti OC Edition 12GB GDDR6X Gaming Graphics Card",
         "model": "ROG Strix GeForce RTX 3080 Ti OC Edition",
@@ -72,10 +71,10 @@
         "supplier": "dsfsd",
         "short_disc": "Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada.",
         "sku": "sk1223",
+        "email":"text@test.com",
         "image": "https://res.cloudinary.com/tusar/image/upload/v1651828564/gpu-point/gpu-1_kf68ru.jpg"
     },
     {
-        "_id": "6",
         "slug": "asus-rog-strix-geforce-rtx-3080-ti-oc-edition-12gb-gddr6x-gaming-graphics-card",
         "name": "ASUS ROG Strix GeForce RTX 3080 Ti OC Edition 12GB GDDR6X Gaming Graphics Card",
         "model": "ROG Strix GeForce RTX 3080 Ti OC Edition",
@@ -87,10 +86,10 @@
         "supplier": "dsfsd",
         "short_disc": "Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada.",
         "sku": "sk1223",
+        "email":"text@test.com",
         "image": "https://res.cloudinary.com/tusar/image/upload/v1651828564/gpu-point/gpu-1_kf68ru.jpg"
     },
     {
-        "_id": "7",
         "slug": "asus-rog-strix-geforce-rtx-3080-ti-oc-edition-12gb-gddr6x-gaming-graphics-card",
         "name": "ASUS ROG Strix GeForce RTX 3080 Ti OC Edition 12GB GDDR6X Gaming Graphics Card",
         "model": "ROG Strix GeForce RTX 3080 Ti OC Edition",
@@ -102,10 +101,10 @@
         "supplier": "dsfsd",
         "short_disc": "Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada.",
         "sku": "sk1223",
+        "email":"text@test.com",
         "image": "https://res.cloudinary.com/tusar/image/upload/v1651828564/gpu-point/gpu-1_kf68ru.jpg"
     },
     {
-        "_id": "8",
         "slug": "asus-rog-strix-geforce-rtx-3080-ti-oc-edition-12gb-gddr6x-gaming-graphics-card",
         "name": "ASUS ROG Strix GeForce RTX 3080 Ti OC Edition 12GB GDDR6X Gaming Graphics Card",
         "model": "ROG Strix GeForce RTX 3080 Ti OC Edition",
@@ -117,10 +116,10 @@
         "supplier": "dsfsd",
         "short_disc": "Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada.",
         "sku": "sk1223",
+        "email":"text@test.com",
         "image": "https://res.cloudinary.com/tusar/image/upload/v1651828564/gpu-point/gpu-1_kf68ru.jpg"
     },
     {
-        "_id": "9",
         "slug": "asus-rog-strix-geforce-rtx-3080-ti-oc-edition-12gb-gddr6x-gaming-graphics-card",
         "name": "ASUS ROG Strix GeForce RTX 3080 Ti OC Edition 12GB GDDR6X Gaming Graphics Card",
         "model": "ROG Strix GeForce RTX 3080 Ti OC Edition",
@@ -132,10 +131,10 @@
         "supplier": "dsfsd",
         "short_disc": "Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada.",
         "sku": "sk1223",
+        "email":"text@test.com",
         "image": "https://res.cloudinary.com/tusar/image/upload/v1651828564/gpu-point/gpu-1_kf68ru.jpg"
     },
     {
-        "_id": "10",
         "slug": "asus-rog-strix-geforce-rtx-3080-ti-oc-edition-12gb-gddr6x-gaming-graphics-card",
         "name": "ASUS ROG Strix GeForce RTX 3080 Ti OC Edition 12GB GDDR6X Gaming Graphics Card",
         "model": "ROG Strix GeForce RTX 3080 Ti OC Edition",
@@ -147,10 +146,10 @@
         "supplier": "dsfsd",
         "short_disc": "Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada.",
         "sku": "sk1223",
+        "email":"text@test.com",
         "image": "https://res.cloudinary.com/tusar/image/upload/v1651828564/gpu-point/gpu-1_kf68ru.jpg"
     },
     {
-        "_id": "11",
         "slug": "asus-rog-strix-geforce-rtx-3080-ti-oc-edition-12gb-gddr6x-gaming-graphics-card",
         "name": "ASUS ROG Strix GeForce RTX 3080 Ti OC Edition 12GB GDDR6X Gaming Graphics Card",
         "model": "ROG Strix GeForce RTX 3080 Ti OC Edition",
@@ -162,10 +161,10 @@
         "supplier": "dsfsd",
         "short_disc": "Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada.",
         "sku": "sk1223",
+        "email":"text@test.com",
         "image": "https://res.cloudinary.com/tusar/image/upload/v1651828564/gpu-point/gpu-1_kf68ru.jpg"
     },
     {
-        "_id": "12",
         "slug": "asus-rog-strix-geforce-rtx-3080-ti-oc-edition-12gb-gddr6x-gaming-graphics-card",
         "name": "ASUS ROG Strix GeForce RTX 3080 Ti OC Edition 12GB GDDR6X Gaming Graphics Card",
         "model": "ROG Strix GeForce RTX 3080 Ti OC Edition",
@@ -177,10 +176,10 @@
         "supplier": "dsfsd",
         "short_disc": "Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada.",
         "sku": "sk1223",
+        "email":"text@test.com",
         "image": "https://res.cloudinary.com/tusar/image/upload/v1651828564/gpu-point/gpu-1_kf68ru.jpg"
     },
     {
-        "_id": "13",
         "slug": "asus-rog-strix-geforce-rtx-3080-ti-oc-edition-12gb-gddr6x-gaming-graphics-card",
         "name": "ASUS ROG Strix GeForce RTX 3080 Ti OC Edition 12GB GDDR6X Gaming Graphics Card",
         "model": "ROG Strix GeForce RTX 3080 Ti OC Edition",
@@ -192,6 +191,7 @@
         "supplier": "dsfsd",
         "short_disc": "Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada.",
         "sku": "sk1223",
+        "email":"text@test.com",
         "image": "https://res.cloudinary.com/tusar/image/upload/v1651828564/gpu-point/gpu-1_kf68ru.jpg"
     }
 ]

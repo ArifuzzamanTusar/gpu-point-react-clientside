@@ -15,6 +15,8 @@ import Blog from './components/Pages/Blog/Blog';
 import Register from './components/Pages/Auth/Register';
 import Login from './components/Pages/Auth/Login';
 import ForgotPassword from './components/Pages/Auth/ForgotPassword';
+import RequireAuth from './components/Utilities/RequireAuth';
+import Notfound from './components/Pages/Notfound/Notfound';
 
 function App() {
 
@@ -35,13 +37,17 @@ function App() {
           <Route path='/register' element={<Register></Register>} ></Route>
           <Route path='/reset-password'element={<ForgotPassword></ForgotPassword>} ></Route>
 
+         {/* 404  */}
+         <Route path='*' element={<Notfound></Notfound>}></Route>
+        
+        
           {/* private routes  */}
          
 
-          <Route path='/inventory/:product_id' element={<Inventory></Inventory>} ></Route>
-          <Route path='/manage-inventories' element={<ManageInventories></ManageInventories>} ></Route>
-          <Route path='/my-products' element={<Myproducts></Myproducts>} ></Route>
-          <Route path='/add-products' element={<Addproduct></Addproduct>} ></Route>
+          <Route path='/inventory/:product_id' element={ <RequireAuth> <Inventory></Inventory> </RequireAuth>  } ></Route>
+          <Route path='/manage-inventories' element={ <RequireAuth> <ManageInventories></ManageInventories> </RequireAuth> } ></Route>
+          <Route path='/my-products' element={ <RequireAuth> <Myproducts></Myproducts></RequireAuth> } ></Route>
+          <Route path='/add-products' element={ <RequireAuth>  <Addproduct></Addproduct>  </RequireAuth>} ></Route>
 
 
         </Routes>

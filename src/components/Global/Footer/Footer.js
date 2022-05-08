@@ -9,7 +9,7 @@ const Footer = () => {
                     <Col md={4}>
                         <div className="footer-container py-2">
                             <h2>  <img width={250} src="https://res.cloudinary.com/tusar/image/upload/v1651940469/gpu-point/gpu-point_zciihy.webp" alt="" /></h2>
-                            <p>Touraholic is a trusted and reliable tour and travel agency among all the leading and updated tour-operating services in Bangladesh.</p>
+                            <p>GPU Point is a warehouse where you may safely keep your GPU stocks. Stock up on supplies and take pleasure in your work.</p>
                         </div>
 
                     </Col>

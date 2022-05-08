@@ -10,16 +10,16 @@ const Slider = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100 slider-image"
-                    src="https://res.cloudinary.com/tusar/image/upload/v1650157222/travel/slider-sunderban_ybd01j.webp"
+                    src="https://res.cloudinary.com/tusar/image/upload/v1651991957/gpu-point/kv-cover_pg9jx3.webp"
                     alt="First slide"
                 />
                 <Carousel.Caption className='caption_container'>
                     <div className="carousel_inner container">
                         <h2 className='slider_title'>ASUS ROG Strix </h2>
                         <h4 className='slider_subtitle'> GeForce RTX 3080</h4>
-                        <p className='col-md-6'><strong>Touraholic</strong> is a trusted and reliable tour and travel agency among all the leading and updated tour-operating services in Bangladesh. We are here to bring the luxury to your traveling. Safe traveling, your security, and your enjoyment are our focus during your travels.</p>
+                        <p className='col-md-6'>Stock the best Performance GPU on GPU point. Add your GPU stock today.  </p>
 
-                        <Link className='btn btn-outline-light' to={'/tour-packages'}>Explore Tours</Link>
+                        <Link className='btn btn-outline-light' to={'/add-products'}>Add your stock</Link>
                     </div>
                 </Carousel.Caption>
             </Carousel.Item>
@@ -28,15 +28,15 @@ const Slider = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100 slider-image"
-                    src="https://res.cloudinary.com/tusar/image/upload/v1650157222/travel/slider-sunderban_ybd01j.webp"
+                    src="https://res.cloudinary.com/tusar/image/upload/v1651992114/gpu-point/364_rtx2080_light-1_qgsdls.webp"
                     alt="First slide"
                 />
                 <Carousel.Caption className='caption_container'>
                     <div className="carousel_inner container">
-                        <h2 className='slider_title'>Sundarbans Mangrove</h2>
-                        <h4 className='slider_subtitle'> Adventure the largest mangrove forest</h4>
-                        <p className='col-md-6'>Sundarbans is a mangrove area in the delta formed by the confluence of the Padma, Brahmaputra and Meghna Rivers in the Bay of Bengal. </p>
-                        <Link className='btn btn-outline-light' to={'/checkout/104'}>Book a Sundarban Tour</Link>
+                        <h2 className='slider_title'>Stock the Power</h2>
+                        <h4 className='slider_subtitle'>  with Safe</h4>
+                        <p className='col-md-6'>We ensure your stocks safety. keep away your hassles and joy with GPU POINT today </p>
+                        <Link className='btn btn-outline-light' to={'/add-products'}>Add your stock</Link>
                     </div>
                 </Carousel.Caption>
             </Carousel.Item>
@@ -44,48 +44,34 @@ const Slider = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100 slider-image"
-                    src="https://res.cloudinary.com/tusar/image/upload/v1650157221/travel/slider-st-martin_mwxrof.webp"
+                    src="https://res.cloudinary.com/tusar/image/upload/v1651992113/gpu-point/gettyimagesgraphicscards_rmyobc.webp"
                     alt="First slide"
                 />
                 <Carousel.Caption className='caption_container'>
                     <div className="carousel_inner container">
-                        <h2 className='slider_title'>St. Martin's Island</h2>
-                        <h4 className='slider_subtitle'> Discover the beauty of the only coral reef island in Bangladesh</h4>
-                        <p className='col-md-6'>St. Martin's Island is a small island in the northeastern part of the Bay of Bengal, about 9 km south of the tip of the Cox's Bazar-Teknaf peninsula, and forming the southernmost part of Bangladesh. There is a small adjoining island that is separated at high tide, called Chera Dwip. </p>
-                        <Link className='btn btn-outline-light' to={'/checkout/103'}>Book a St.Martin Tour</Link>
-                    </div>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100 slider-image"
-                    src="https://res.cloudinary.com/tusar/image/upload/v1650157224/travel/slider-sajhek_q4spvi.webp"
-                    alt="First slide"
-                />
-                <Carousel.Caption className='caption_container'>
-                    <div className="carousel_inner container">
-                        <h2 className='slider_title'>Sajek Valley</h2>
-                        <h4 className='slider_subtitle'> A Touch of Clouds on your hand</h4>
-                        <p className='col-md-6'>Sajek Tripuri Valley is one of the most popular tourist spots in Bangladesh situated among the hills of the Kasalong range of mountains in Sajek union, Baghaichhari Upazila in Rangamati District. The valley is 2,000 feet (610 m) above sea level. Sajek Tripuri Valley is known as the Queen of Hills and Roof of Rangamati.</p>
-                        <Link className='btn btn-outline-light' to={'/checkout/107'}>Book a Sajhek Tour</Link>
+                        <h2 className='slider_title'>Powefull Management</h2>
+                        <h4 className='slider_subtitle'> Makes your easylife</h4>
+                        <p className='col-md-6'>GPU point allows you to store your stocks by clicks and clicks easily.</p>
+                        <Link className='btn btn-outline-light' to={'/manage-inventories'}>Manage Now</Link>
                     </div>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100 slider-image"
-                    src="https://res.cloudinary.com/tusar/image/upload/v1650157223/travel/slider-bali_facauz.webp"
+                    src="https://res.cloudinary.com/tusar/image/upload/v1651991957/gpu-point/nvidia-geforce-rtx_bnwggt.webp"
                     alt="First slide"
                 />
                 <Carousel.Caption className='caption_container'>
                     <div className="carousel_inner container">
-                        <h2 className='slider_title'>BALI</h2>
-                        <h4 className='slider_subtitle'> A magical blend of Natural Creature</h4>
-                        <p className='col-md-6'>Bali is a province of Indonesia and the westernmost of the Lesser Sunda Islands. East of Java and west of Lombok, the province includes the island of Bali and a few smaller neighbouring islands, notably Nusa Penida, Nusa Lembongan, and Nusa Ceningan.</p>
-                        <Link className='btn btn-outline-light' to={'/checkout/105'}>Book a BALI Tour</Link>
+                        <h2 className='slider_title'>Enlarge Warehouse</h2>
+                        <h4 className='slider_subtitle'>The Capacity you need</h4>
+                        <p className='col-md-6'>GPU Point offers a large wirehouse to store your products</p>
+                        <Link className='btn btn-outline-light' to={'/add-products'}>Add your stock</Link>
                     </div>
                 </Carousel.Caption>
             </Carousel.Item>
+  
 
 
 

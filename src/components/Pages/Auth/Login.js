@@ -1,4 +1,5 @@
 
+import axios from 'axios';
 import React, { useState } from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
@@ -41,9 +42,13 @@ const Login = () => {
 
 
 
-    const handleLogin = (event) => {
+    const handleLogin = async (event) => {
         event.preventDefault();
         signInWithEmailAndPassword(email, password);
+
+        // --AccessToken Set-- 
+        const {data} = await axios.post('https://floating-tundra-94246.herokuapp.com/login', {email});
+        localStorage.setItem('accessToken', data.accessToken);
 
 
     }

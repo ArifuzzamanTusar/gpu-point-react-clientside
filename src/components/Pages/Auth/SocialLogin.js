@@ -4,6 +4,7 @@ import {useSignInWithGoogle} from 'react-firebase-hooks/auth'
 
 import { useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import axios from 'axios';
 
 const SocialLogin = () => {
     const [signInWithGoogle, user, gloading, gerror] = useSignInWithGoogle(auth);
@@ -25,6 +26,12 @@ const SocialLogin = () => {
         // return <p>Loading...</p>;
       }
       if (user) {
+        const email = user?.user.email;
+        const fetchLogin = async () => {
+            const {data} = await axios.post('https://floating-tundra-94246.herokuapp.com/login', {email});
+            localStorage.setItem('accessToken', data.accessToken);
+        }
+        fetchLogin();
         
           navigate(from, {replace:true})
         

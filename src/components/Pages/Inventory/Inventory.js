@@ -2,10 +2,11 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Button, Col, Container, FormControl, InputGroup, Row } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 
 const Inventory = () => {
+    let navigate = useNavigate();
 
     const { productId } = useParams();
     const [product, setProduct] = useState({});
@@ -59,8 +60,18 @@ const Inventory = () => {
     return (
         <div>
             <Container className='py-5'>
+                <div className="page_navigator mb-5">
+                    <div className="p-4 rounded shadow d-flex justify-content-between align-items-center">
+                        <div className="n_title">
+                            <h4>Product Stock</h4>
+                            <p>Managing Product scock</p>
+                        </div>
+                        <div className="button-area">
+                            <Button onClick={() => navigate(`/manage-inventories`)} className="btn btn-primary">Manage All</Button>
+                        </div>
+                    </div>
+                </div>
 
-             
                 <Row>
                     <Col md={6}>
                         <div className="product-image">
@@ -68,7 +79,7 @@ const Inventory = () => {
                         </div>
                     </Col>
                     <Col md={6}>
-                        <div className="product-dics p-4 shadow-lg rounded">
+                        <div className="product-dics p-4 shadow-sm rounded">
                             <div className="product_name">
                                 <h2 className="h4"> {name}</h2>
                             </div>

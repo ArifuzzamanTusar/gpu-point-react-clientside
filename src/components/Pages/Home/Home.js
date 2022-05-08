@@ -9,7 +9,14 @@ const Home = () => {
     return (
         <div>
             <Slider></Slider>
-            <Products></Products>
+
+            <div className="py-5">
+                <div className="py-5 text-center">
+                    <h2>  Our Stocks</h2>
+                </div>
+                <Products></Products>
+            </div>
+
             <div className="Testimonial py-5 ">
                 <div className="container">
                     <div className="py-5 text-center">

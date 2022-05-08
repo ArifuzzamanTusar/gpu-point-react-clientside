@@ -14,7 +14,7 @@ const Inventory = () => {
     // fetching requested data by id
     useEffect(() => {
         const getProduct = async () => {
-            const { data } = await axios.get(`http://localhost:5000/product/${productId}`);
+            const { data } = await axios.get(`https://floating-tundra-94246.herokuapp.com/product/${productId}`);
             setProduct(data);
         }
         getProduct();
@@ -26,7 +26,7 @@ const Inventory = () => {
 
     // to update data fetching
     const fetchUpdateData = async (updatedProduct, message, callReset) => {
-        const { data } = await axios.put(`http://localhost:5000/product/${productId}`, updatedProduct)
+        const { data } = await axios.put(`https://floating-tundra-94246.herokuapp.com/product/${productId}`, updatedProduct)
         setProduct(data);
         toast.success(message);
         if (callReset) { reset() }
@@ -59,6 +59,8 @@ const Inventory = () => {
     return (
         <div>
             <Container className='py-5'>
+
+             
                 <Row>
                     <Col md={6}>
                         <div className="product-image">

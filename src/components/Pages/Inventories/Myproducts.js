@@ -3,7 +3,7 @@ import { signOut } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { Button, Container, Table } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { BsTrash  } from "react-icons/bs";
+import { BsTrash } from "react-icons/bs";
 import { FaCog } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
@@ -13,16 +13,16 @@ import auth from '../../../firebase.init';
 
 const Myproducts = () => {
     // const [products] = useProduct();
-    
+
 
     const [user] = useAuthState(auth);
     const [myItems, setMyItems] = useState([]);
     let navigate = useNavigate();
 
-    useEffect( () => {
+    useEffect(() => {
         const getMyItems = async () => {
             const email = user?.email;
-            const url = `http://localhost:5000/my-products?email=${email}`;
+            const url = `https://floating-tundra-94246.herokuapp.com/my-products?email=${email}`;
 
             try {
                 const { data } = await axios.get(url, {
@@ -32,49 +32,60 @@ const Myproducts = () => {
                 })
                 setMyItems(data);
             } catch (error) {
-                if(error.response.status === 401 || error.response.status === 403){
+                if (error.response.status === 401 || error.response.status === 403) {
                     signOut(auth);
                     navigate('/login')
                     toast.error('Forbidden/Unauthorized access!');
                 }
             }
-        } 
+        }
         getMyItems();
     }, [user, navigate]);
 
-        // delete single product with sweetaleart
-        const deleteProduct = async (productId) => {
-            swal({
-                title: "Are you sure?",
-                text: "Be careful... Once deleted, you will not be able to recover this imaginary file!",
-                icon: "warning",
-                buttons: true,
-                dangerMode: true,
-            })
-                .then((willDelete) => {
-                    if (willDelete) {
-                        axios.delete(`http://localhost:5000/product/${productId}`)
-                            .then(response => {
-                                const remaining = myItems.filter(product => product._id !== productId);
-                                setMyItems(remaining);
-                                swal("Product has been deleted!", {
-                                    icon: "success",
-                                });
+    // delete single product with sweetaleart
+    const deleteProduct = async (productId) => {
+        swal({
+            title: "Are you sure?",
+            text: "Be careful... Once deleted, you will not be able to recover this imaginary file!",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        })
+            .then((willDelete) => {
+                if (willDelete) {
+                    axios.delete(`https://floating-tundra-94246.herokuapp.com/product/${productId}`)
+                        .then(response => {
+                            const remaining = myItems.filter(product => product._id !== productId);
+                            setMyItems(remaining);
+                            swal("Product has been deleted!", {
+                                icon: "success",
                             });
-                    } else {
-                        swal("Action Cancelled, Chill!");
-                    }
-                });
-        }
+                        });
+                } else {
+                    swal("Action Cancelled, Chill!");
+                }
+            });
+    }
 
     return (
         <div>
             <Container className='py-5'>
+                <div className="page_navigator mb-5">
+                    <div className="p-4 rounded shadow d-flex justify-content-between align-items-center">
+                        <div className="n_title">
+                            <h4>My Products</h4>
+                            <p>Showing all My stocked products</p>
+                        </div>
+                        <div className="button-area">
+                            <Button onClick={() => navigate(`/add-products`)} className='btn btn-primary'>Add Product</Button>
+                        </div>
+                    </div>
+                </div>
                 <div className="table-area">
                     <Table bordered hover responsive>
                         <thead>
                             <tr>
-                               
+
                                 <th>Thumbs</th>
                                 <th>Name</th>
                                 <th>Supplier</th>
@@ -89,7 +100,7 @@ const Myproducts = () => {
                             {
                                 myItems.map(getProduct =>
                                     <tr key={getProduct._id} >
-                                        
+
                                         <td width={50}> <img className='thumb-image img-fluid' src={getProduct.image} alt="" />  </td>
                                         <td>{getProduct.name}</td>
                                         <td>{getProduct.supplier}</td>

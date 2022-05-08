@@ -1,7 +1,8 @@
 import axios from 'axios';
-import { Col, Container,  Form, Row } from 'react-bootstrap';
+import { Button, Col, Container,  Form, Row } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import auth from '../../../firebase.init';
 
@@ -10,6 +11,7 @@ const Addproduct = () => {
     const [user] = useAuthState(auth);
     console.log(user);
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
+    let navigate = useNavigate();
 
     const addProduct = async (data) => {
 
@@ -26,15 +28,24 @@ const Addproduct = () => {
 
             <div className="py-5">
                 <Container>
+                <div className="page_navigator mb-5">
+                    <div className="p-4 rounded shadow d-flex justify-content-between align-items-center">
+                        <div className="n_title">
+                            <h4>Add New Product</h4>
+                            <p>Create a new product Stock</p>
+                        </div>
+                        <div className="button-area">
+                            <Button onClick={() => navigate(`/my-products`)} className='btn btn-primary'>My Products</Button>
+                        </div>
+                    </div>
+                </div>
                     <Row>
-                        <Col md={3}></Col>
-                        <Col md={6}>
-                            <div className="form-container p-5 rounded shadow">
-                                <div className="py-3 text-center">
-                                    <h3>Add New Product</h3>
-                                </div>
+                       
+                        <Col md={12}>
+                            <div className="form-container p-5 rounded shadow-sm">
+                                
                                 {/* -----  */}
-                                <form className="add__item-main  p-4 mt-4" onSubmit={handleSubmit(addProduct)}>
+                                <form className="add__item-main" onSubmit={handleSubmit(addProduct)}>
                                     <Row>
 
                                         <Form.Control type="text" value={0} hidden {...register('sold')} />
@@ -111,7 +122,7 @@ const Addproduct = () => {
                                 {/* ----  */}
                             </div>
                         </Col>
-                        <Col md={3}> </Col>
+                        
                     </Row>
 
                     <ToastContainer

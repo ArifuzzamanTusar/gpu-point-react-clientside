@@ -16,7 +16,7 @@ const ManageInventories = () => {
     // fetching data with query
     useEffect(() => {
         const getProducts = async () => {
-            const { data } = await axios.get(`http://localhost:5000/products?page=${page}&size=${size}`);
+            const { data } = await axios.get(`https://floating-tundra-94246.herokuapp.com/products?page=${page}&size=${size}`);
             setProducts(data)
         }
         getProducts();
@@ -25,7 +25,7 @@ const ManageInventories = () => {
     // fetching total product
     useEffect(() => {
         const getProductCount = async () => {
-            const { data } = await axios.get('http://localhost:5000/products-count');
+            const { data } = await axios.get('https://floating-tundra-94246.herokuapp.com/products-count');
             setPages(Math.ceil(data.count / 5));
         }
         getProductCount();
@@ -42,7 +42,7 @@ const ManageInventories = () => {
         })
             .then((willDelete) => {
                 if (willDelete) {
-                    axios.delete(`http://localhost:5000/product/${productId}`)
+                    axios.delete(`https://floating-tundra-94246.herokuapp.com/product/${productId}`)
                         .then(response => {
                             const remaining = products.filter(product => product._id !== productId);
                             setProducts(remaining);
@@ -61,7 +61,17 @@ const ManageInventories = () => {
         <div>
             <div className="py-5">
                 <Container>
-
+                    <div className="page_navigator mb-5">
+                        <div className="p-4 rounded shadow d-flex justify-content-between align-items-center">
+                            <div className="n_title">
+                                <h4>All Products</h4>
+                                <p>Showing all products</p>
+                            </div>
+                            <div className="button-area">
+                                <Button onClick={ () => navigate(`/add-products`)} className='btn btn-primary'>Add Product</Button>
+                            </div>
+                        </div>
+                    </div>
                     <div className="table-area">
                         <Table bordered hover responsive>
                             <thead>

@@ -1,5 +1,35 @@
+# GPU POINT
+GPU warehouse management webapp
+- Live Site: https://gpu-point.web.app/
+- server: https://floating-tundra-94246.herokuapp.com/
 
-server: https://floating-tundra-94246.herokuapp.com/
+## Features
+- Inventory / Stock management
+- Firebase Auth 
+- Add Product stock
+- JWT secured token
+- Stock, Restock and deliver products
+- Google login
+- MongoDB database
+- Node,Express Backend on HEROKU
+- and many more
+
+## Packages and Libraries
+- "axios": "^0.25.0",
+- "bootstrap": "^5.1.3",
+- "firebase": "^9.8.0",
+- "react": "^18.1.0",
+- "react-bootstrap": "^2.3.1",
+- "react-dom": "^18.1.0",
+- "react-firebase-hooks": "^5.0.3",
+- "react-hook-form": "^7.30.0",
+- "react-icons": "^4.3.1",
+- "react-router-dom": "6",
+- "react-scripts": "5.0.1",
+- "react-toastify": "^9.0.1",
+- "sweetalert": "^2.1.2",
+- "swiper": "^8.1.4",
+
 
 # Getting Started with Create React App
 

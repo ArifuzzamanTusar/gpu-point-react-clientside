@@ -64,7 +64,7 @@ const Addproduct = () => {
                                         <Col md={6}>
                                             <div className="mb-4">
                                                 <Form.Label>stock*</Form.Label>
-                                                <Form.Control type="text" {...register('stock', { required: "Quantityis required." })} placeholder="500" />
+                                                <Form.Control type="number" {...register('stock', { required: "Quantityis required." })} placeholder="500" />
                                                 {errors.quantity && <p className='text-danger'>{errors.quantity.message}</p>}
                                             </div>
                                         </Col>
@@ -72,7 +72,7 @@ const Addproduct = () => {
                                         <Col md={6}>
                                             <div className="mb-4">
                                                 <Form.Label>Price*</Form.Label>
-                                                <Form.Control type="text" {...register('price', { required: "Price is required." })} placeholder="1500" />
+                                                <Form.Control type="number" {...register('price', { required: "Price is required." })} placeholder="1500" />
                                                 {errors.price && <p className='text-danger'>{errors.price.message}</p>}
                                             </div>
                                         </Col>

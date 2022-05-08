@@ -36,7 +36,7 @@ const Header = () => {
                         <Nav>
                             {
                                 user ?
-                                    <NavDropdown title={username ? username : "Welcome!"} id="collasible-nav-dropdown">
+                                    <NavDropdown title={username ? "Welcome! " + username : "Welcome!"} id="collasible-nav-dropdown">
 
                                         <NavDropdown.Item > <Customlink to={'/manage-inventories'}>Manage Inventories</Customlink> </NavDropdown.Item>
                                         <NavDropdown.Item > <Customlink to={'/add-products'}>Add Products</Customlink> </NavDropdown.Item>

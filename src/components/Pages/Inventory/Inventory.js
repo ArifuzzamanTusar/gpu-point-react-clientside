@@ -28,7 +28,7 @@ const Inventory = () => {
     const fetchUpdateData = async (updatedProduct, message, callReset) => {
         const { data } = await axios.put(`http://localhost:5000/product/${productId}`, updatedProduct)
         setProduct(data);
-        toast.success(message, { duration: 1000, position: 'top-right', });
+        toast.success(message);
         if (callReset) { reset() }
     }
 
@@ -43,7 +43,7 @@ const Inventory = () => {
 
             fetchUpdateData(updatedProduct, message, false);
         } else {
-            toast.success('Please stock item', { duration: 1000, position: 'top-right', });
+            toast.success('Please stock item');
         }
     }
 

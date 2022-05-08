@@ -1,3 +1,4 @@
+import { signOut } from 'firebase/auth';
 import React, { useState } from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
@@ -109,6 +110,14 @@ const Register = () => {
         if (password.length > 5 && password === rePassword) {
             await createUserWithEmailAndPassword(email, password);
             await updateProfile({ displayName: name });
+
+            // -------- Redirecting ----------
+            
+            await signOut(auth);
+            await toast.success("Successfully Registered! Login Now");
+            navigate('/login');
+    
+            
 
         }
         else {

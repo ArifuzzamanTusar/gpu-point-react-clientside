@@ -19,7 +19,7 @@ const TestimonialLoop = (props) => {
 
                 </div>
                 <p className="review-text py-3">
-                    "{review}"
+                    "{review.substring(0, 120)} ..."
                 </p>
                 <div className="rating">Rating: {rating} out of 5</div>
             </div>

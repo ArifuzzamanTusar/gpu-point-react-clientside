@@ -4,4 +4,8 @@
     width: 350px;
     cursor: grab;
   }
+  .swiper-pagination{
+    padding-top: 30px;
+    bottom: 0;
+  }
   

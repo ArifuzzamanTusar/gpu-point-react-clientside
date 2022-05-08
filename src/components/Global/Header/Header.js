@@ -18,8 +18,8 @@ const Header = () => {
     }
 
     return (
-        <div>
-            <Navbar collapseOnSelect expand="lg" className='bg-teal' sticky="top">
+        
+            <Navbar collapseOnSelect expand="lg" className='bg-teal' sticky="top"  variant="dark">
                 <Container className=''>
                     <Navbar.Brand >
                         <Customlink to={'/'}> <img width={150} src='https://res.cloudinary.com/tusar/image/upload/v1651940469/gpu-point/gpu-point_zciihy.webp' alt="" /> </Customlink>
@@ -57,7 +57,7 @@ const Header = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-        </div>
+       
     );
 };
 

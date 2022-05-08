@@ -4,12 +4,14 @@ import { BsTrash } from "react-icons/bs";
 import { FaCog } from "react-icons/fa";
 import swal from 'sweetalert';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const ManageInventories = () => {
     const [products, setProducts] = useState([]);
     const [pages, setPages] = useState(0);
     const [page, setPage] = useState(0);
     const [size, setSize] = useState(5);
+    let navigate = useNavigate();
 
     // fetching data with query
     useEffect(() => {
@@ -86,7 +88,7 @@ const ManageInventories = () => {
                                             <td>{getProduct.stock}</td>
                                             <td>{getProduct.sold}</td>
                                             <td>
-                                                <Button className='mx-1' variant='primary' > <FaCog /> </Button>
+                                                <Button onClick={() => navigate(`/inventory/${getProduct._id}`)} className='mx-1' variant='primary' > <FaCog /> </Button>
                                                 <Button onClick={() => deleteProduct(getProduct._id)} variant='danger' > <BsTrash /></Button>
 
                                             </td>

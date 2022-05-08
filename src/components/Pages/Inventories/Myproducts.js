@@ -97,7 +97,7 @@ const Myproducts = () => {
                                         <td>{getProduct.stock}</td>
                                         <td>{getProduct.sold}</td>
                                         <td>
-                                            <Button className='mx-1' variant='primary' > <FaCog /> </Button>
+                                            <Button onClick={() => navigate(`/inventory/${getProduct._id}`)} className='mx-1' variant='primary' > <FaCog /> </Button>
                                             <Button onClick={() => deleteProduct(getProduct._id)} variant='danger' > <BsTrash /></Button>
 
                                         </td>
